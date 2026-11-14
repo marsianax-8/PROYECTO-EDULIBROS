@@ -1,43 +1,262 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduLibros</title>
-<link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio | Edulibros</title>
+  <meta name="description" content="Edulibros: plataforma para donar, prestar y reutilizar libros, manuales y calculadoras en tu comunidad educativa.">
+  <meta property="og:title" content="Inicio | Edulibros">
+  <meta property="og:description" content="Edulibros: plataforma para donar, prestar y reutilizar libros, manuales y calculadoras en tu comunidad educativa.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <link rel="icon" href="assets/images/logo-edulibros.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div class="contenedor">
-<nav class="menu">
-  <div class="marca"><div class="logo-icono">📚</div><h2>EduLibros</h2><p>Compartir conocimiento,<br>multiplicar oportunidades.</p></div>
-  <p class="titulo-menu">PRINCIPAL</p><a href="#inicio">⌂ Inicio</a><a href="#catalogo">▤ Catálogo</a>
-  <p class="titulo-menu">MATERIALES</p><a href="#inventario">▣ Inventario</a><a href="#donaciones">♡ Donaciones</a><a href="#solicitudes">✉ Solicitudes</a><a href="#prestamos">⇄ Préstamos</a><a href="#devoluciones">↩ Devoluciones</a><a href="#novedades">⚠ Novedades</a>
-  <p class="titulo-menu">ADMINISTRACIÓN</p><a href="#usuarios">♙ Usuarios</a><a href="#reportes">▥ Reportes</a>
-  <p class="titulo-menu">CUENTA</p><a href="#login">⇥ Iniciar sesión</a>
-</nav>
-<main class="contenido">
-<header class="encabezado"><div><span class="sobre-titulo">PLATAFORMA DE GESTIÓN ACADÉMICA</span><h1>Panel principal</h1><p>Bienvenido a la comunidad EduLibros.</p></div><div class="perfil">● Usuario de demostración</div></header>
-<section class="bienvenida" id="inicio"><div><span class="etiqueta">APRENDER TAMBIÉN ES COMPARTIR</span><h2>Un libro puede abrir<br>muchas oportunidades.</h2><p>Encuentra libros, calculadoras y materiales de estudio. Dona aquello que ya no utilizas y permite que otros estudiantes continúen aprendiendo.</p><a class="boton-claro" href="#catalogo">Explorar materiales</a></div><div class="ilustracion">📚</div></section>
-<section class="indicadores">
- <article class="tarjeta"><span>▣</span><p>Materiales registrados</p><h2>125</h2><small>En el inventario</small></article>
- <article class="tarjeta"><span>✓</span><p>Materiales disponibles</p><h2>86</h2><small>Listos para préstamo</small></article>
- <article class="tarjeta"><span>⇄</span><p>Préstamos activos</p><h2>24</h2><small>En circulación</small></article>
- <article class="tarjeta"><span>♡</span><p>Donaciones recibidas</p><h2>15</h2><small>Aportes de la comunidad</small></article>
-</section>
-<section class="seccion" id="catalogo"><span class="subtitulo">CONSULTA DE RECURSOS</span><h2>Catálogo de materiales</h2><p class="descripcion">Explora los recursos académicos registrados en EduLibros.</p>
-<form class="formulario filtros"><div class="campo"><label for="buscar">Buscar material</label><input id="buscar" type="text" placeholder="Nombre del libro o material"></div><div class="campo"><label for="categoria-filtro">Categoría</label><select id="categoria-filtro"><option>Todas las categorías</option><option>Libros</option><option>Calculadoras</option><option>Manuales</option><option>Otros materiales</option></select></div><div class="campo"><label for="disponibilidad">Disponibilidad</label><select id="disponibilidad"><option>Todos</option><option>Disponible</option><option>Prestado</option><option>No disponible</option></select></div></form>
-<div class="tabla-contenedor"><table><tr><th>Material</th><th>Categoría</th><th>Estado físico</th><th>Disponibilidad</th></tr><tr><td>Cálculo diferencial</td><td>Libro</td><td>Buen estado</td><td><span class="estado disponible">Disponible</span></td></tr><tr><td>Calculadora científica</td><td>Calculadora</td><td>Con uso</td><td><span class="estado prestado">Prestado</span></td></tr><tr><td>Fundamentos de programación</td><td>Libro</td><td>Nuevo</td><td><span class="estado disponible">Disponible</span></td></tr><tr><td>Manual de electrónica</td><td>Manual</td><td>Dañado</td><td><span class="estado danado">No disponible</span></td></tr></table></div></section>
-<section class="seccion" id="inventario"><span class="subtitulo">CONTROL DE RECURSOS</span><h2>Inventario</h2><p class="descripcion">Registra materiales y describe sus características para mantener organizado el inventario.</p><form><div class="formulario"><div class="campo"><label for="nombre-material">Nombre del material</label><input id="nombre-material" type="text" placeholder="Ej. Cálculo diferencial"></div><div class="campo"><label for="categoria-material">Categoría</label><select id="categoria-material"><option>Seleccionar categoría</option><option>Libro</option><option>Calculadora</option><option>Manual</option><option>Otro</option></select></div><div class="campo"><label for="ubicacion">Ubicación</label><input id="ubicacion" type="text" placeholder="Ej. Biblioteca, estante A"></div><div class="campo"><label for="estado-material">Estado físico</label><select id="estado-material"><option>Seleccionar estado</option><option>Nuevo</option><option>Buen estado</option><option>Con uso</option><option>Dañado</option></select></div><div class="campo completo"><label for="observacion">Observaciones</label><textarea id="observacion" placeholder="Información adicional"></textarea></div></div><button type="button" class="boton">Registrar material</button></form></section>
-<section class="seccion" id="donaciones"><span class="subtitulo">ECONOMÍA CIRCULAR</span><h2>Donaciones</h2><p class="descripcion">Registra los materiales que una persona desea entregar voluntariamente a la comunidad educativa.</p><form><div class="formulario"><div class="campo"><label for="donante">Nombre del donante</label><input id="donante" type="text" placeholder="Nombre completo"></div><div class="campo"><label for="material-donado">Material que desea donar</label><input id="material-donado" type="text" placeholder="Nombre del material"></div><div class="campo"><label for="categoria-donacion">Categoría</label><select id="categoria-donacion"><option>Seleccionar categoría</option><option>Libro</option><option>Calculadora</option><option>Manual</option><option>Otro</option></select></div><div class="campo"><label for="estado-donacion">Estado físico</label><select id="estado-donacion"><option>Seleccionar estado</option><option>Nuevo</option><option>Buen estado</option><option>Con uso</option><option>Dañado</option></select></div><div class="campo completo"><label for="observacion-donacion">Observaciones</label><textarea id="observacion-donacion" placeholder="Describe el material"></textarea></div></div><button type="button" class="boton">Registrar donación</button></form></section>
-<section class="seccion" id="solicitudes"><span class="subtitulo">PETICIONES DE LOS ESTUDIANTES</span><h2>Solicitudes de préstamo</h2><p class="descripcion">Consulta el estado de las solicitudes realizadas por los usuarios.</p><div class="tabla-contenedor"><table><tr><th>Estudiante</th><th>Material solicitado</th><th>Fecha</th><th>Estado</th></tr><tr><td>Laura Gómez</td><td>Cálculo diferencial</td><td>05/11/2026</td><td><span class="estado disponible">Aprobada</span></td></tr><tr><td>Juan Pérez</td><td>Calculadora científica</td><td>06/11/2026</td><td><span class="estado pendiente">Pendiente</span></td></tr><tr><td>María López</td><td>Manual de electrónica</td><td>06/11/2026</td><td><span class="estado danado">Rechazada</span></td></tr></table></div></section>
-<section class="seccion" id="prestamos"><span class="subtitulo">CIRCULACIÓN DE MATERIALES</span><h2>Préstamos</h2><p class="descripcion">Registra la entrega temporal de un material y establece su fecha límite de devolución.</p><form><div class="formulario"><div class="campo"><label for="estudiante-prestamo">Nombre del estudiante</label><input id="estudiante-prestamo" type="text" placeholder="Nombre completo"></div><div class="campo"><label for="codigo-prestamo">Código del material</label><input id="codigo-prestamo" type="text" placeholder="Identificador del material"></div><div class="campo"><label for="fecha-prestamo">Fecha del préstamo</label><input id="fecha-prestamo" type="date"></div><div class="campo"><label for="fecha-limite">Fecha límite de devolución</label><input id="fecha-limite" type="date"></div></div><button type="button" class="boton">Registrar préstamo</button></form></section>
-<section class="seccion" id="devoluciones"><span class="subtitulo">RECEPCIÓN Y VERIFICACIÓN</span><h2>Devoluciones</h2><p class="descripcion">Registra la recepción del material y verifica las condiciones en las que regresa.</p><form><div class="formulario"><div class="campo"><label for="estudiante-devolucion">Estudiante responsable</label><input id="estudiante-devolucion" type="text" placeholder="Nombre del estudiante"></div><div class="campo"><label for="material-devolucion">Material devuelto</label><input id="material-devolucion" type="text" placeholder="Nombre o código"></div><div class="campo"><label for="fecha-devolucion">Fecha de devolución</label><input id="fecha-devolucion" type="date"></div><div class="campo"><label for="estado-devolucion">Estado del material</label><select id="estado-devolucion"><option>Seleccionar estado</option><option>Buen estado</option><option>Con uso</option><option>Dañado</option><option>Incompleto</option></select></div></div><button type="button" class="boton">Registrar devolución</button></form></section>
-<section class="seccion" id="novedades"><span class="subtitulo">SEGUIMIENTO DE INCIDENTES</span><h2>Novedades</h2><p class="descripcion">Documenta daños, pérdidas, deterioro o devoluciones fuera del plazo establecido.</p><form><div class="formulario"><div class="campo"><label for="material-novedad">Material relacionado</label><input id="material-novedad" type="text" placeholder="Nombre o código"></div><div class="campo"><label for="tipo-novedad">Tipo de novedad</label><select id="tipo-novedad"><option>Seleccionar novedad</option><option>Daño</option><option>Pérdida</option><option>Deterioro</option><option>Devolución tardía</option><option>Material incompleto</option></select></div><div class="campo completo"><label for="descripcion-novedad">Descripción</label><textarea id="descripcion-novedad" placeholder="Describe la situación presentada"></textarea></div></div><button type="button" class="boton">Registrar novedad</button></form></section>
-<section class="seccion" id="usuarios"><span class="subtitulo">PERFILES Y ACCESOS</span><h2>Usuarios</h2><p class="descripcion">Representa el registro de las personas que interactúan con la plataforma y sus perfiles.</p><form><div class="formulario"><div class="campo"><label for="nombre-usuario">Nombre completo</label><input id="nombre-usuario" type="text" placeholder="Nombre del usuario"></div><div class="campo"><label for="identificacion">Identificación</label><input id="identificacion" type="text" placeholder="Número de identificación"></div><div class="campo"><label for="correo-usuario">Correo electrónico</label><input id="correo-usuario" type="email" placeholder="usuario@correo.com"></div><div class="campo"><label for="perfil-usuario">Tipo de usuario</label><select id="perfil-usuario"><option>Seleccionar perfil</option><option>Estudiante</option><option>Bibliotecario</option><option>Administrador</option></select></div></div><button type="button" class="boton">Registrar usuario</button></form></section>
-<section class="seccion" id="reportes"><span class="subtitulo">INFORMACIÓN ADMINISTRATIVA</span><h2>Reportes</h2><p class="descripcion">Ejemplos de informes que permitirían revisar el estado de los materiales y las operaciones.</p><div class="tabla-contenedor"><table><tr><th>Reporte</th><th>Información que presenta</th></tr><tr><td>Inventario general</td><td>Materiales registrados y sus características.</td></tr><tr><td>Materiales disponibles</td><td>Recursos habilitados para nuevos préstamos.</td></tr><tr><td>Préstamos activos</td><td>Materiales que actualmente están prestados.</td></tr><tr><td>Donaciones recibidas</td><td>Materiales aportados por la comunidad.</td></tr><tr><td>Devoluciones y novedades</td><td>Condiciones de los materiales después de su devolución.</td></tr></table></div></section>
-<section class="seccion" id="login"><span class="subtitulo">ACCESO A LA PLATAFORMA</span><h2>Iniciar sesión</h2><p class="descripcion">Formulario ilustrativo para representar el ingreso de los diferentes usuarios.</p><div class="caja-login"><div class="login"><div class="login-icono">📖</div><h2>¡Qué bueno tenerte aquí!</h2><p>Ingresa tus datos para continuar.</p><form><div class="campo"><label for="correo-login">Correo electrónico</label><input id="correo-login" type="email" placeholder="nombre@correo.com"></div><div class="campo"><label for="clave-login">Contraseña</label><input id="clave-login" type="password" placeholder="Escribe tu contraseña"></div><button type="button" class="boton">Iniciar sesión</button></form><small>Prototipo visual: los datos no se envían ni se almacenan.</small></div></div></section>
-<footer><h2>EduLibros 📚</h2><p>Compartir conocimiento, multiplicar oportunidades.</p><small>Proyecto académico · Técnica Laboral en Desarrollo de Software · 2026</small></footer>
-</main>
-</div>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado-superior">
+      <a class="logo" href="index.html" aria-label="Edulibros, ir al inicio">
+        <img src="assets/images/logo-edulibros.svg" alt="Logo de Edulibros" width="42" height="42">
+        <p style="margin:0">Edu<span>libros</span></p>
+      </a>
+      <a class="boton boton-chico" href="login.html">Iniciar sesión</a>
+    </div>
+    <nav class="menu" aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li class="grupo"><a href="inventario.html">Inventario</a></li>
+        <li><a href="donaciones.html">Donaciones</a></li>
+        <li><a href="solicitudes.html">Solicitudes</a></li>
+        <li><a href="prestamos.html">Préstamos</a></li>
+        <li><a href="devoluciones.html">Devoluciones</a></li>
+        <li><a href="novedades.html">Novedades</a></li>
+        <li class="grupo"><a href="usuarios.html">Usuarios</a></li>
+        <li><a href="reportes.html">Reportes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="contenedor hero-grid">
+        <div>
+          <h1>Lo que ya no usas, le sirve a alguien más</h1>
+          <p>Edulibros reúne en un solo lugar la donación y el préstamo de libros, manuales y calculadoras científicas de tu comunidad educativa. Estudia sin comprar lo que solo vas a necesitar un semestre.</p>
+          <div class="hero-botones">
+            <a class="boton" href="catalogo.html">Explorar el catálogo</a>
+            <a class="boton boton-claro" href="donaciones.html">Quiero donar</a>
+          </div>
+        </div>
+        <div class="hero-dibujo"><svg viewBox="0 0 300 260" role="img" aria-label="Pila de libros con una calculadora científica">
+  <ellipse cx="150" cy="240" rx="120" ry="14" fill="rgba(120,30,0,.25)"/>
+  <rect x="40" y="190" width="220" height="40" rx="8" fill="#fff"/><rect x="40" y="190" width="220" height="12" rx="6" fill="#ffd2b8"/>
+  <rect x="60" y="145" width="190" height="40" rx="8" fill="#ffe3d1"/><rect x="60" y="145" width="190" height="12" rx="6" fill="#ffb4a2"/>
+  <rect x="50" y="100" width="200" height="40" rx="8" fill="#fff"/><rect x="50" y="100" width="200" height="12" rx="6" fill="#ff9d86"/>
+  <g transform="rotate(-8 190 70)"><rect x="150" y="20" width="80" height="85" rx="10" fill="#3a2620"/>
+  <rect x="160" y="30" width="60" height="22" rx="4" fill="#ffe3d1"/>
+  <circle cx="168" cy="68" r="6" fill="#ff6f61"/><circle cx="190" cy="68" r="6" fill="#f97316"/><circle cx="212" cy="68" r="6" fill="#ff6f61"/>
+  <circle cx="168" cy="88" r="6" fill="#f97316"/><circle cx="190" cy="88" r="6" fill="#ff6f61"/><circle cx="212" cy="88" r="6" fill="#f97316"/></g>
+  <path d="M85 60c-10-6-24-8-38-6v40c14-2 28 0 38 6 10-6 24-8 38-6V54c-14-2-28 0-38 6z" fill="#fff"/>
+  <path d="M85 60v40" stroke="#ff6f61" stroke-width="3"/>
+</svg></div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <h2>¿Por qué Edulibros?</h2>
+        <p class="intro">Muchos estudiantes no pueden comprar todos sus materiales, mientras que otros guardan en casa libros en buen estado que ya no necesitan. Edulibros conecta ambas necesidades.</p>
+        <div class="rejilla">
+          <article class="tarjeta">
+            <div class="icono" aria-hidden="true">💰</div>
+            <h3>Ahorra dinero</h3>
+            <p>Pide prestado un libro o una calculadora en lugar de comprarlos.</p>
+          </article>
+          <article class="tarjeta">
+            <div class="icono" aria-hidden="true">🌱</div>
+            <h3>Reutiliza</h3>
+            <p>Los materiales en buen estado vuelven a circular y se reduce el consumo innecesario.</p>
+          </article>
+          <article class="tarjeta">
+            <div class="icono" aria-hidden="true">🔎</div>
+            <h3>Todo organizado</h3>
+            <p>Sabes qué hay, dónde está, quién lo tiene y cuándo se devuelve.</p>
+          </article>
+          <article class="tarjeta">
+            <div class="icono" aria-hidden="true">🤲</div>
+            <h3>Comunidad solidaria</h3>
+            <p>Cada donación ayuda a otro estudiante a seguir adelante.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion-clara">
+      <div class="contenedor">
+        <h2>¿Cómo funciona?</h2>
+        <p class="intro">Cinco pasos sencillos, desde la donación hasta la devolución.</p>
+        <div class="pasos">
+          <div class="paso"><h3>Se dona</h3><p>Una persona entrega un material y queda pendiente de revisión.</p></div>
+          <div class="paso"><h3>Se registra</h3><p>Si cumple las condiciones, entra al inventario.</p></div>
+          <div class="paso"><h3>Se solicita</h3><p>Un estudiante pide el material si está disponible.</p></div>
+          <div class="paso"><h3>Se presta</h3><p>Se entrega con una fecha límite de devolución.</p></div>
+          <div class="paso"><h3>Se devuelve</h3><p>Se revisa su estado y vuelve a estar disponible.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <h2>Herramientas de la plataforma</h2>
+        <p class="intro">Entra al módulo que necesites. Cada uno explica qué puedes hacer allí.</p>
+        <div class="rejilla">
+        <article class="tarjeta">
+          <div class="icono" aria-hidden="true">📚</div>
+          <h3>Catálogo</h3>
+          <p>Busca libros, manuales y calculadoras y mira si están disponibles.</p>
+          <a class="enlace-tarjeta" href="catalogo.html">Ir a catálogo →</a>
+        </article>
+        <article class="tarjeta">
+          <div class="icono" aria-hidden="true">🗂️</div>
+          <h3>Inventario</h3>
+          <p>Registra cada material con su categoría, ubicación y estado físico.</p>
+          <a class="enlace-tarjeta" href="inventario.html">Ir a inventario →</a>
+        </article>
+        <article class="tarjeta">
+          <div class="icono" aria-hidden="true">🎁</div>
+          <h3>Donaciones</h3>
+          <p>Entrega a la comunidad lo que ya no usas. Se revisa y se acepta.</p>
+          <a class="enlace-tarjeta" href="donaciones.html">Ir a donaciones →</a>
+        </article>
+        <article class="tarjeta">
+          <div class="icono" aria-hidden="true">📝</div>
+          <h3>Solicitudes</h3>
+          <p>Pide un material disponible y consulta si fue aprobado.</p>
+          <a class="enlace-tarjeta" href="solicitudes.html">Ir a solicitudes →</a>
+        </article>
+        <article class="tarjeta">
+          <div class="icono" aria-hidden="true">🤝</div>
+          <h3>Préstamos</h3>
+          <p>Registra la entrega y la fecha límite de devolución.</p>
+          <a class="enlace-tarjeta" href="prestamos.html">Ir a préstamos →</a>
+        </article>
+        <article class="tarjeta">
+          <div class="icono" aria-hidden="true">↩️</div>
+          <h3>Devoluciones</h3>
+          <p>Recibe el material y verifica en qué condiciones regresa.</p>
+          <a class="enlace-tarjeta" href="devoluciones.html">Ir a devoluciones →</a>
+        </article>
+        <article class="tarjeta">
+          <div class="icono" aria-hidden="true">⚠️</div>
+          <h3>Novedades</h3>
+          <p>Deja constancia de daños, pérdidas o entregas tardías.</p>
+          <a class="enlace-tarjeta" href="novedades.html">Ir a novedades →</a>
+        </article>
+        <article class="tarjeta">
+          <div class="icono" aria-hidden="true">👥</div>
+          <h3>Usuarios</h3>
+          <p>Administra estudiantes, bibliotecarios y administradores.</p>
+          <a class="enlace-tarjeta" href="usuarios.html">Ir a usuarios →</a>
+        </article>
+        <article class="tarjeta">
+          <div class="icono" aria-hidden="true">📊</div>
+          <h3>Reportes</h3>
+          <p>Resúmenes simples del inventario y de los préstamos.</p>
+          <a class="enlace-tarjeta" href="reportes.html">Ir a reportes →</a>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion-clara">
+      <div class="contenedor">
+        <h2>Tres perfiles, cada uno con sus funciones</h2>
+        <p class="intro">Al iniciar sesión, cada persona ve solo las opciones que le corresponden.</p>
+        <div class="rejilla">
+          <article class="tarjeta">
+            <h3>🎓 Estudiante o solicitante</h3>
+            <ul class="lista-visto">
+              <li>Consulta el catálogo</li>
+              <li>Solicita préstamos</li>
+              <li>Revisa sus solicitudes y préstamos</li>
+            </ul>
+          </article>
+          <article class="tarjeta">
+            <h3>📖 Bibliotecario o gestor</h3>
+            <ul class="lista-visto">
+              <li>Administra el inventario</li>
+              <li>Revisa donaciones y solicitudes</li>
+              <li>Registra entregas, devoluciones y novedades</li>
+            </ul>
+          </article>
+          <article class="tarjeta">
+            <h3>🛠️ Administrador</h3>
+            <ul class="lista-visto">
+              <li>Gestiona usuarios y roles</li>
+              <li>Puede administrar materiales</li>
+              <li>Consulta los reportes generales</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <h2>Edulibros en cifras de ejemplo</h2>
+        <p class="intro">Estos números son de muestra para ver cómo se presentaría la información.</p>
+        <div class="rejilla">
+          <div class="tarjeta estadistica"><div class="numero">120</div><div class="texto">materiales registrados</div></div>
+          <div class="tarjeta estadistica"><div class="numero">84</div><div class="texto">disponibles hoy</div></div>
+          <div class="tarjeta estadistica"><div class="numero">29</div><div class="texto">préstamos activos</div></div>
+          <div class="tarjeta estadistica"><div class="numero">8</div><div class="texto">donaciones por revisar</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion-clara">
+      <div class="contenedor" style="text-align:center">
+        <h2>¿Tienes un libro guardado?</h2>
+        <p class="intro">Dónalo y dale una segunda vida. Otro estudiante lo está buscando.</p>
+        <a class="boton" href="donaciones.html">Registrar una donación</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie-grid">
+        <div>
+          <h2>Edulibros</h2>
+          <p>Plataforma web de gestión bibliográfica para donar, prestar y reutilizar material académico en la comunidad educativa.</p>
+        </div>
+        <div>
+          <h2>Materiales</h2>
+          <ul>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="donaciones.html">Donaciones</a></li>
+            <li><a href="prestamos.html">Préstamos</a></li>
+            <li><a href="devoluciones.html">Devoluciones</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Administración</h2>
+          <ul>
+            <li><a href="usuarios.html">Usuarios</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+            <li><a href="login.html">Iniciar sesión</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copia">Proyecto académico CESDE · Técnico laboral en asistente de desarrollo de software · 2026<br>
+      Mariana Acosta Gómez</p>
+    </div>
+  </footer>
 </body>
 </html>
