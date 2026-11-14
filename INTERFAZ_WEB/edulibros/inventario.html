@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventario | Edulibros</title>
+  <meta name="description" content="Registra materiales con nombre, categoría, ubicación, estado físico y observaciones en el inventario de Edulibros.">
+  <meta property="og:title" content="Inventario | Edulibros">
+  <meta property="og:description" content="Registra materiales con nombre, categoría, ubicación, estado físico y observaciones en el inventario de Edulibros.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <link rel="icon" href="assets/images/logo-edulibros.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado-superior">
+      <a class="logo" href="index.html" aria-label="Edulibros, ir al inicio">
+        <img src="assets/images/logo-edulibros.svg" alt="Logo de Edulibros (provisional)" width="42" height="42">
+        <p style="margin:0">Edu<span>libros</span></p>
+      </a>
+      <a class="boton boton-chico" href="login.html">Iniciar sesión</a>
+    </div>
+    <nav class="menu" aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li class="grupo"><a href="inventario.html" aria-current="page">Inventario</a></li>
+        <li><a href="donaciones.html">Donaciones</a></li>
+        <li><a href="solicitudes.html">Solicitudes</a></li>
+        <li><a href="prestamos.html">Préstamos</a></li>
+        <li><a href="devoluciones.html">Devoluciones</a></li>
+        <li><a href="novedades.html">Novedades</a></li>
+        <li class="grupo"><a href="usuarios.html">Usuarios</a></li>
+        <li><a href="reportes.html">Reportes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="titulo-pagina">
+      <div class="contenedor">
+        <p class="migas"><a href="index.html">Inicio</a> / Inventario</p>
+        <h1>Inventario</h1>
+        <p>Registra los materiales y describe sus características para mantener todo organizado.</p>
+        <div class="roles"><span>Disponible para:</span> <span class="etiqueta">Bibliotecario</span><span class="etiqueta">Administrador</span></div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor dos-columnas">
+        <div>
+          <h2 style="text-align:left">Registrar material</h2>
+          <p class="nota"><strong>Formulario ilustrativo:</strong> este prototipo solo muestra cómo se vería la pantalla. No guarda ni envía datos, porque aún no está conectado con Java ni con una base de datos.</p>
+          <form class="formulario" aria-label="Registrar material">
+            <div class="campos">
+              <div class="campo">
+                <label for="nombre">Nombre del material</label>
+                <input id="nombre" type="text" placeholder="Ej: Manual de Java básico">
+              </div>
+              <div class="campo">
+                <label for="cat">Categoría</label>
+                <select id="cat">
+                  <option>Libro de texto</option>
+                  <option>Manual</option>
+                  <option>Calculadora científica</option>
+                  <option>Otro material de apoyo</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="ubicacion">Ubicación</label>
+                <input id="ubicacion" type="text" placeholder="Ej: Estante A-1">
+              </div>
+              <div class="campo">
+                <label for="estado">Estado físico</label>
+                <select id="estado">
+                  <option>Nuevo</option>
+                  <option>Buen estado</option>
+                  <option>Con uso</option>
+                  <option>Dañado</option>
+                </select>
+              </div>
+              <div class="campo ancho">
+                <label for="obs">Observaciones</label>
+                <textarea id="obs" placeholder="Detalles del material: edición, hojas sueltas, accesorios..."></textarea>
+              </div>
+            </div>
+            <div class="acciones">
+              <button class="boton" type="button">Registrar material</button>
+            </div>
+          </form>
+          <p class="nota">Cada material recibe un código único (por ejemplo, MAT-001).</p>
+        </div>
+        <div>
+          <h2 style="text-align:left">Materiales registrados</h2>
+          <div class="tabla-scroll">
+            <table>
+              <thead><tr><th>Código</th><th>Nombre</th><th>Ubicación</th><th>Estado</th></tr></thead>
+              <tbody>
+                <tr><td>MAT-001</td><td>Fundamentos de programación</td><td>Estante A-1</td><td><span class="etiqueta ok">Buen estado</span></td></tr>
+                <tr><td>MAT-002</td><td>Calculadora científica</td><td>Caja 3</td><td><span class="etiqueta aviso">Con uso</span></td></tr>
+                <tr><td>MAT-003</td><td>Manual de Java básico</td><td>Estante B-2</td><td><span class="etiqueta info">Nuevo</span></td></tr>
+                <tr><td>MAT-004</td><td>Matemáticas básicas</td><td>Revisión</td><td><span class="etiqueta mal">Dañado</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="contenedor">
+        <p class="referencia">Requisitos del proyecto: <code>RF-07</code> <code>RF-11</code> <code>RF-13</code> · Un material dañado que no se puede usar queda fuera de servicio</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie-grid">
+        <div>
+          <h2>Edulibros</h2>
+          <p>Plataforma web de gestión bibliográfica para donar, prestar y reutilizar material académico en la comunidad educativa.</p>
+        </div>
+        <div>
+          <h2>Materiales</h2>
+          <ul>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="donaciones.html">Donaciones</a></li>
+            <li><a href="prestamos.html">Préstamos</a></li>
+            <li><a href="devoluciones.html">Devoluciones</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Administración</h2>
+          <ul>
+            <li><a href="usuarios.html">Usuarios</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+            <li><a href="login.html">Iniciar sesión</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copia">Proyecto académico CESDE · Técnico laboral en asistente de desarrollo de software · 2026<br>
+      Mariana Acosta Gómez y Samuel Vitola Baltazar</p>
+    </div>
+  </footer>
+</body>
+</html>

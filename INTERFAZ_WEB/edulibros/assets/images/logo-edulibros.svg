@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logo provisional de Edulibros: un libro abierto">
+  <rect width="64" height="64" rx="16" fill="#f97316"/>
+  <path d="M32 18c-5-3-12-4-19-3v28c7-1 14 0 19 3 5-3 12-4 19-3V15c-7-1-14 0-19 3z" fill="#fff"/>
+  <path d="M32 18v28" stroke="#ff6f61" stroke-width="3"/>
+  <path d="M18 24h9M18 30h9M37 24h9M37 30h9" stroke="#f97316" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

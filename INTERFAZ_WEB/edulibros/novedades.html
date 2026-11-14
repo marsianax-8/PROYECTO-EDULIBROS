@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Novedades | Edulibros</title>
+  <meta name="description" content="Consulta daños, pérdidas, deterioro y devoluciones tardías de los materiales de Edulibros.">
+  <meta property="og:title" content="Novedades | Edulibros">
+  <meta property="og:description" content="Consulta daños, pérdidas, deterioro y devoluciones tardías de los materiales de Edulibros.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <link rel="icon" href="assets/images/logo-edulibros.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado-superior">
+      <a class="logo" href="index.html" aria-label="Edulibros, ir al inicio">
+        <img src="assets/images/logo-edulibros.svg" alt="Logo de Edulibros (provisional)" width="42" height="42">
+        <p style="margin:0">Edu<span>libros</span></p>
+      </a>
+      <a class="boton boton-chico" href="login.html">Iniciar sesión</a>
+    </div>
+    <nav class="menu" aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li class="grupo"><a href="inventario.html">Inventario</a></li>
+        <li><a href="donaciones.html">Donaciones</a></li>
+        <li><a href="solicitudes.html">Solicitudes</a></li>
+        <li><a href="prestamos.html">Préstamos</a></li>
+        <li><a href="devoluciones.html">Devoluciones</a></li>
+        <li><a href="novedades.html" aria-current="page">Novedades</a></li>
+        <li class="grupo"><a href="usuarios.html">Usuarios</a></li>
+        <li><a href="reportes.html">Reportes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="titulo-pagina">
+      <div class="contenedor">
+        <p class="migas"><a href="index.html">Inicio</a> / Novedades</p>
+        <h1>Novedades</h1>
+        <p>Documenta daños, pérdidas, deterioro o devoluciones fuera del plazo establecido.</p>
+        <div class="roles"><span>Disponible para:</span> <span class="etiqueta">Bibliotecario</span><span class="etiqueta">Administrador</span></div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <h2 style="text-align:left">Novedades registradas (ejemplos)</h2>
+        <div class="tabla-scroll">
+          <table>
+            <thead><tr><th>Material</th><th>Estudiante</th><th>Tipo</th><th>Observación</th></tr></thead>
+            <tbody>
+              <tr><td>Matemáticas básicas</td><td>Luis Gómez</td><td><span class="etiqueta mal">Daño</span></td><td>Hojas rotas al regresar</td></tr>
+              <tr><td>Calculadora científica</td><td>Ana Pérez</td><td><span class="etiqueta aviso">Devolución tardía</span></td><td>Entregada 5 días después del límite</td></tr>
+              <tr><td>Manual de Excel</td><td>Sara Ruiz</td><td><span class="etiqueta mal">Extravío</span></td><td>Reportado como perdido</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rejilla" style="margin-top:2rem">
+          <article class="tarjeta"><div class="icono" aria-hidden="true">🩹</div><h3>Daños</h3><p>Materiales que regresaron con hojas rotas, manchas u otras fallas.</p></article>
+          <article class="tarjeta"><div class="icono" aria-hidden="true">❓</div><h3>Extravíos</h3><p>Materiales que no se lograron recuperar.</p></article>
+          <article class="tarjeta"><div class="icono" aria-hidden="true">⏰</div><h3>Retrasos</h3><p>Devoluciones hechas después de la fecha límite.</p></article>
+        </div>
+        <p class="referencia">Requisitos del proyecto: <code>RF-31</code> <code>RF-33</code> <code>RF-38</code></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie-grid">
+        <div>
+          <h2>Edulibros</h2>
+          <p>Plataforma web de gestión bibliográfica para donar, prestar y reutilizar material académico en la comunidad educativa.</p>
+        </div>
+        <div>
+          <h2>Materiales</h2>
+          <ul>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="donaciones.html">Donaciones</a></li>
+            <li><a href="prestamos.html">Préstamos</a></li>
+            <li><a href="devoluciones.html">Devoluciones</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Administración</h2>
+          <ul>
+            <li><a href="usuarios.html">Usuarios</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+            <li><a href="login.html">Iniciar sesión</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copia">Proyecto académico CESDE · Técnico laboral en asistente de desarrollo de software · 2026<br>
+      Mariana Acosta Gómez y Samuel Vitola Baltazar</p>
+    </div>
+  </footer>
+</body>
+</html>

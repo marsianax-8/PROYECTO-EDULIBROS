@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reportes | Edulibros</title>
+  <meta name="description" content="Reportes básicos de inventario, préstamos, donaciones, materiales más solicitados y novedades.">
+  <meta property="og:title" content="Reportes | Edulibros">
+  <meta property="og:description" content="Reportes básicos de inventario, préstamos, donaciones, materiales más solicitados y novedades.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <link rel="icon" href="assets/images/logo-edulibros.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado-superior">
+      <a class="logo" href="index.html" aria-label="Edulibros, ir al inicio">
+        <img src="assets/images/logo-edulibros.svg" alt="Logo de Edulibros (provisional)" width="42" height="42">
+        <p style="margin:0">Edu<span>libros</span></p>
+      </a>
+      <a class="boton boton-chico" href="login.html">Iniciar sesión</a>
+    </div>
+    <nav class="menu" aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li class="grupo"><a href="inventario.html">Inventario</a></li>
+        <li><a href="donaciones.html">Donaciones</a></li>
+        <li><a href="solicitudes.html">Solicitudes</a></li>
+        <li><a href="prestamos.html">Préstamos</a></li>
+        <li><a href="devoluciones.html">Devoluciones</a></li>
+        <li><a href="novedades.html">Novedades</a></li>
+        <li class="grupo"><a href="usuarios.html">Usuarios</a></li>
+        <li><a href="reportes.html" aria-current="page">Reportes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="titulo-pagina">
+      <div class="contenedor">
+        <p class="migas"><a href="index.html">Inicio</a> / Reportes</p>
+        <h1>Reportes</h1>
+        <p>Ejemplos de informes para revisar el estado de los materiales y de las operaciones.</p>
+        <div class="roles"><span>Disponible para:</span> <span class="etiqueta">Administrador</span><span class="etiqueta">Bibliotecario</span></div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <p class="nota">Los números de esta página son <strong>datos de ejemplo</strong> para mostrar cómo se vería cada reporte.</p>
+        <div class="rejilla">
+          <article class="tarjeta">
+            <h3>Resumen del inventario</h3>
+            <div class="barra-fila"><div class="nombre"><span>Disponibles</span><span>84</span></div><div class="barra" role="img" aria-label="Disponibles: 84"><span style="width:70%"></span></div></div>
+            <div class="barra-fila"><div class="nombre"><span>Prestados</span><span>29</span></div><div class="barra" role="img" aria-label="Prestados: 29"><span style="width:24%"></span></div></div>
+            <div class="barra-fila"><div class="nombre"><span>Fuera de servicio</span><span>7</span></div><div class="barra" role="img" aria-label="Fuera de servicio: 7"><span style="width:5%"></span></div></div>
+            <p class="referencia">Total: 120 materiales · <code>RF-34</code></p>
+          </article>
+          <article class="tarjeta">
+            <h3>Resumen de préstamos</h3>
+            <div class="barra-fila"><div class="nombre"><span>Activos</span><span>29</span></div><div class="barra" role="img" aria-label="Activos: 29"><span style="width:48%"></span></div></div>
+            <div class="barra-fila"><div class="nombre"><span>Vencidos</span><span>4</span></div><div class="barra" role="img" aria-label="Vencidos: 4"><span style="width:6%"></span></div></div>
+            <div class="barra-fila"><div class="nombre"><span>Finalizados</span><span>27</span></div><div class="barra" role="img" aria-label="Finalizados: 27"><span style="width:45%"></span></div></div>
+            <p class="referencia"><code>RF-36</code></p>
+          </article>
+          <article class="tarjeta">
+            <h3>Resumen de donaciones</h3>
+            <div class="barra-fila"><div class="nombre"><span>Pendientes</span><span>8</span></div><div class="barra" role="img" aria-label="Pendientes: 8"><span style="width:26%"></span></div></div>
+            <div class="barra-fila"><div class="nombre"><span>Aceptadas</span><span>19</span></div><div class="barra" role="img" aria-label="Aceptadas: 19"><span style="width:63%"></span></div></div>
+            <div class="barra-fila"><div class="nombre"><span>Rechazadas</span><span>3</span></div><div class="barra" role="img" aria-label="Rechazadas: 3"><span style="width:10%"></span></div></div>
+            <p class="referencia"><code>RF-37</code></p>
+          </article>
+          <article class="tarjeta">
+            <h3>Materiales más solicitados</h3>
+            <div class="barra-fila"><div class="nombre"><span>Fundamentos de programación</span><span>12</span></div><div class="barra" role="img" aria-label="Fundamentos de programación: 12"><span style="width:100%"></span></div></div>
+            <div class="barra-fila"><div class="nombre"><span>Calculadora científica</span><span>9</span></div><div class="barra" role="img" aria-label="Calculadora científica: 9"><span style="width:75%"></span></div></div>
+            <div class="barra-fila"><div class="nombre"><span>Manual de Java básico</span><span>6</span></div><div class="barra" role="img" aria-label="Manual de Java básico: 6"><span style="width:50%"></span></div></div>
+            <p class="referencia"><code>RF-35</code></p>
+          </article>
+          <article class="tarjeta">
+            <h3>Novedades de materiales</h3>
+            <div class="barra-fila"><div class="nombre"><span>Dañados</span><span>5</span></div><div class="barra" role="img" aria-label="Dañados: 5"><span style="width:41%"></span></div></div>
+            <div class="barra-fila"><div class="nombre"><span>Extraviados</span><span>2</span></div><div class="barra" role="img" aria-label="Extraviados: 2"><span style="width:16%"></span></div></div>
+            <p class="referencia"><code>RF-38</code></p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie-grid">
+        <div>
+          <h2>Edulibros</h2>
+          <p>Plataforma web de gestión bibliográfica para donar, prestar y reutilizar material académico en la comunidad educativa.</p>
+        </div>
+        <div>
+          <h2>Materiales</h2>
+          <ul>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="donaciones.html">Donaciones</a></li>
+            <li><a href="prestamos.html">Préstamos</a></li>
+            <li><a href="devoluciones.html">Devoluciones</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Administración</h2>
+          <ul>
+            <li><a href="usuarios.html">Usuarios</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+            <li><a href="login.html">Iniciar sesión</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copia">Proyecto académico CESDE · Técnico laboral en asistente de desarrollo de software · 2026<br>
+      Mariana Acosta Gómez y Samuel Vitola Baltazar</p>
+    </div>
+  </footer>
+</body>
+</html>

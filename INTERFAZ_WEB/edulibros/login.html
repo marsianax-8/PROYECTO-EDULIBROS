@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión | Edulibros</title>
+  <meta name="description" content="Formulario ilustrativo de ingreso a Edulibros para estudiantes, bibliotecarios y administradores.">
+  <meta property="og:title" content="Iniciar sesión | Edulibros">
+  <meta property="og:description" content="Formulario ilustrativo de ingreso a Edulibros para estudiantes, bibliotecarios y administradores.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <link rel="icon" href="assets/images/logo-edulibros.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado-superior">
+      <a class="logo" href="index.html" aria-label="Edulibros, ir al inicio">
+        <img src="assets/images/logo-edulibros.svg" alt="Logo de Edulibros (provisional)" width="42" height="42">
+        <p style="margin:0">Edu<span>libros</span></p>
+      </a>
+      <a class="boton boton-chico" href="login.html">Iniciar sesión</a>
+    </div>
+    <nav class="menu" aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li class="grupo"><a href="inventario.html">Inventario</a></li>
+        <li><a href="donaciones.html">Donaciones</a></li>
+        <li><a href="solicitudes.html">Solicitudes</a></li>
+        <li><a href="prestamos.html">Préstamos</a></li>
+        <li><a href="devoluciones.html">Devoluciones</a></li>
+        <li><a href="novedades.html">Novedades</a></li>
+        <li class="grupo"><a href="usuarios.html">Usuarios</a></li>
+        <li><a href="reportes.html">Reportes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="titulo-pagina">
+      <div class="contenedor">
+        <p class="migas"><a href="index.html">Inicio</a> / Iniciar sesión</p>
+        <h1>Iniciar sesión</h1>
+        <p>Ingresa con tu cuenta para ver las opciones que corresponden a tu perfil.</p>
+        <div class="roles"><span>Disponible para:</span> <span class="etiqueta">Estudiante</span><span class="etiqueta">Bibliotecario</span><span class="etiqueta">Administrador</span></div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor login-caja">
+        <p class="nota"><strong>Formulario ilustrativo:</strong> este prototipo solo muestra cómo se vería la pantalla. No guarda ni envía datos, porque aún no está conectado con Java ni con una base de datos.</p>
+        <form class="formulario" aria-label="Iniciar sesión">
+          <div class="campos" style="grid-template-columns:1fr">
+            <div class="campo">
+              <label for="usuario">Correo o nombre de usuario</label>
+              <input id="usuario" type="text" autocomplete="username" placeholder="tucorreo@ejemplo.com">
+            </div>
+            <div class="campo">
+              <label for="clave">Contraseña</label>
+              <input id="clave" type="password" autocomplete="current-password">
+            </div>
+            <div class="campo">
+              <label for="perfil">Perfil (solo para mostrar el ejemplo)</label>
+              <select id="perfil">
+                <option>Estudiante</option>
+                <option>Bibliotecario</option>
+                <option>Administrador</option>
+              </select>
+            </div>
+          </div>
+          <div class="acciones"><button class="boton" type="button">Ingresar</button></div>
+        </form>
+        <p class="nota">Si los datos fueran incorrectos, el sistema mostraría el mensaje: <em>“No fue posible iniciar sesión. Revisa tus datos”</em>.</p>
+        <p class="referencia">Requisitos del proyecto: <code>RF-01</code> <code>RF-02</code> <code>RF-06</code></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie-grid">
+        <div>
+          <h2>Edulibros</h2>
+          <p>Plataforma web de gestión bibliográfica para donar, prestar y reutilizar material académico en la comunidad educativa.</p>
+        </div>
+        <div>
+          <h2>Materiales</h2>
+          <ul>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="donaciones.html">Donaciones</a></li>
+            <li><a href="prestamos.html">Préstamos</a></li>
+            <li><a href="devoluciones.html">Devoluciones</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Administración</h2>
+          <ul>
+            <li><a href="usuarios.html">Usuarios</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+            <li><a href="login.html">Iniciar sesión</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copia">Proyecto académico CESDE · Técnico laboral en asistente de desarrollo de software · 2026<br>
+      Mariana Acosta Gómez y Samuel Vitola Baltazar</p>
+    </div>
+  </footer>
+</body>
+</html>

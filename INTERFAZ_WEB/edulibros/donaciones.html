@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donaciones | Edulibros</title>
+  <meta name="description" content="Dona libros, manuales o calculadoras a la comunidad educativa y consulta si fueron aceptados.">
+  <meta property="og:title" content="Donaciones | Edulibros">
+  <meta property="og:description" content="Dona libros, manuales o calculadoras a la comunidad educativa y consulta si fueron aceptados.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <link rel="icon" href="assets/images/logo-edulibros.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado-superior">
+      <a class="logo" href="index.html" aria-label="Edulibros, ir al inicio">
+        <img src="assets/images/logo-edulibros.svg" alt="Logo de Edulibros (provisional)" width="42" height="42">
+        <p style="margin:0">Edu<span>libros</span></p>
+      </a>
+      <a class="boton boton-chico" href="login.html">Iniciar sesión</a>
+    </div>
+    <nav class="menu" aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li class="grupo"><a href="inventario.html">Inventario</a></li>
+        <li><a href="donaciones.html" aria-current="page">Donaciones</a></li>
+        <li><a href="solicitudes.html">Solicitudes</a></li>
+        <li><a href="prestamos.html">Préstamos</a></li>
+        <li><a href="devoluciones.html">Devoluciones</a></li>
+        <li><a href="novedades.html">Novedades</a></li>
+        <li class="grupo"><a href="usuarios.html">Usuarios</a></li>
+        <li><a href="reportes.html">Reportes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="titulo-pagina">
+      <div class="contenedor">
+        <p class="migas"><a href="index.html">Inicio</a> / Donaciones</p>
+        <h1>Donaciones</h1>
+        <p>Registra los materiales que quieres entregar voluntariamente a la comunidad educativa.</p>
+        <div class="roles"><span>Disponible para:</span> <span class="etiqueta">Bibliotecario</span><span class="etiqueta">Administrador</span></div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor dos-columnas">
+        <div>
+          <h2 style="text-align:left">Registrar donación recibida</h2>
+          <p class="nota"><strong>Formulario ilustrativo:</strong> este prototipo solo muestra cómo se vería la pantalla. No guarda ni envía datos, porque aún no está conectado con Java ni con una base de datos.</p>
+          <form class="formulario" aria-label="Registrar donación">
+            <div class="campos">
+              <div class="campo">
+                <label for="donante">Nombre del donante</label>
+                <input id="donante" type="text" placeholder="Nombre completo">
+              </div>
+              <div class="campo">
+                <label for="material">Material donado</label>
+                <input id="material" type="text" placeholder="Ej: Libro de Álgebra">
+              </div>
+              <div class="campo">
+                <label for="cat-don">Categoría</label>
+                <select id="cat-don">
+                  <option>Libro de texto</option>
+                  <option>Manual</option>
+                  <option>Calculadora científica</option>
+                  <option>Otro material de apoyo</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="fecha">Fecha de recepción</label>
+                <input id="fecha" type="date">
+              </div>
+              <div class="campo ancho">
+                <label for="cond">Condiciones del material</label>
+                <textarea id="cond" placeholder="Describe cómo llegó el material"></textarea>
+              </div>
+            </div>
+            <div class="acciones"><button class="boton" type="button">Registrar donación</button></div>
+          </form>
+          <p class="nota">Toda donación queda en estado <strong>pendiente</strong> hasta que se revise.</p>
+        </div>
+        <div>
+          <h2 style="text-align:left">Donaciones registradas</h2>
+          <div class="tabla-scroll">
+            <table>
+              <thead><tr><th>Material</th><th>Fecha</th><th>Estado</th><th>Acciones</th></tr></thead>
+              <tbody>
+                <tr><td>Libro de Álgebra</td><td>10/11/2026</td><td><span class="etiqueta aviso">Pendiente</span></td><td><button class="boton boton-chico" type="button">Aceptar</button> <button class="boton boton-chico boton-claro" type="button">Rechazar</button></td></tr>
+                <tr><td>Calculadora Casio</td><td>05/11/2026</td><td><span class="etiqueta ok">Aceptada</span></td><td>Ya está en el inventario</td></tr>
+                <tr><td>Manual de Excel</td><td>02/11/2026</td><td><span class="etiqueta mal">Rechazada</span></td><td>Motivo: páginas incompletas</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="nota">Si se acepta, el material entra al inventario. Si se rechaza, se anota el motivo.</p>
+        </div>
+      </div>
+      <div class="contenedor">
+        <p class="referencia">Requisitos del proyecto: <code>RF-14</code> <code>RF-15</code> <code>RF-16</code> <code>RF-17</code> <code>RF-18</code></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie-grid">
+        <div>
+          <h2>Edulibros</h2>
+          <p>Plataforma web de gestión bibliográfica para donar, prestar y reutilizar material académico en la comunidad educativa.</p>
+        </div>
+        <div>
+          <h2>Materiales</h2>
+          <ul>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="donaciones.html">Donaciones</a></li>
+            <li><a href="prestamos.html">Préstamos</a></li>
+            <li><a href="devoluciones.html">Devoluciones</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Administración</h2>
+          <ul>
+            <li><a href="usuarios.html">Usuarios</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+            <li><a href="login.html">Iniciar sesión</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copia">Proyecto académico CESDE · Técnico laboral en asistente de desarrollo de software · 2026<br>
+      Mariana Acosta Gómez y Samuel Vitola Baltazar</p>
+    </div>
+  </footer>
+</body>
+</html>
